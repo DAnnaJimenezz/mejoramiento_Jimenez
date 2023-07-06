@@ -10,11 +10,12 @@ class Paciente (Cita):
         self.__tipoDocumento = tipoDocumento
         self.__registrarCita = []
 
-    def registrarCita (self, mesVigente, horarioDefinido, medicoSeleccionado, consultorioSeleccionado):
-        citaRegistrada1 = ('Octubre', 'Mañana', 'Jaime Gonzales', 'Consultorio 67')
-        citaRegistrada2 = ('Enero', 'Tarde', 'Sandra Jimenez', 'Consultorio 123')
-        return mesVigente, horarioDefinido, medicoSeleccionado, consultorioSeleccionado
-    
+    def registrarCita (self, nombrePaciente, dia, hora, fechaAgenda, motivoConsulta, 
+                 especialidadMedico, nombreConsultorio, nombreMedico, 
+                 diasNoAgendados, horarioDisponible):
+        cit = Cita (nombrePaciente, dia, hora, fechaAgenda, motivoConsulta, especialidadMedico, nombreConsultorio, nombreMedico, diasNoAgendados, horarioDisponible)
+        self.__registrarCita.append(cit)
+
     def registroExitoso (self, registrarCita):
         self.__registrarCita.append(registrarCita)
 
