@@ -17,5 +17,5 @@ class Medico (Cita):
         citaAgendada2 = ('Juan Guarnizo', 'Viernes', '6:00am', '27/07/2023')
         return nombrePaciente, dia, hora, fechaAgenda
 
-    def getDatos4 (self):
-        return self.__disponibilidad, self.__consultorio
+    def getDatos2 (self):
+        return self.__nombrePaciente, self.__dia, self.__hora, self.__fechaAgenda, self.__motivoConsulta, self.__especialidadMedica, self.__nombreConsultorio, self.__nombreMedico, self.__diasNoAgendados, self.__horarioDisponible, self.__disponibilidad, self.__consultorio
