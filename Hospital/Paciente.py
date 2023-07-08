@@ -53,7 +53,7 @@ class Paciente (Cita):
     def consultarCita ():
         for Paciente.Cit in Paciente.citas:
             nombreBusqueda = input('Ingrese su nombre para buscar las citas registradas:')
-            if Paciente.Cit["NombrePciente"] == nombreBusqueda:
+            if Paciente.Cit["NombrePaciente"] == nombreBusqueda:
                 print("Cita encontrada:")
                 print("NombreMedico: ", Paciente.Cit["NombreMedico"])
                 print("NombreConsultorio: ", Paciente.Cit["NombreConsultorio"])

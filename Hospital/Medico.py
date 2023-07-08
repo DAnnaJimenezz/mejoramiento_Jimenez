@@ -23,15 +23,9 @@ class Medico (Paciente):
                 print("Horas: ", Paciente.Cit["Horas"])
                 print("Fechas: ", Paciente.Cit["Fechas"])
                 print("Motivo: ", Paciente.Cit["Motivo"])
-                print("Especialidad: ", Paciente.Cit["Especialidad"])
-                print("NombreConsultorio: ", Paciente.Cit["NombreConsultorio"])
-                print("NombreMedico", Paciente.Cit["NombreMedico"])
                 print("DiasNoAgendados", Paciente.Cit["DiaNoAgendados"])
-                print("Horario", Paciente.Cit["Horario"])
-                print("NumeroDocumento", Paciente.Cit["NumeroDocumento"])
-                print("TipoDocumento", Paciente.Cit["TipoDocumento"])
             else:
-                print("Vacante no encontrada.")
+                print("Cita no encontrada.")
 
     def getDatos2 (self):
         return f'{self.__disponibilidad},{self.__consultorio}'
