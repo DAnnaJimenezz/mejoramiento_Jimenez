@@ -3,8 +3,7 @@ class Paciente (Cita):
     citas=[]
     Cit={}
     def __init__(self, nombrePaciente, dia, hora, fechaAgenda, motivoConsulta, 
-                  especialidadMedico, nombreConsultorio, nombreMedico, diasNoAgendados, horarioDisponible,
-                  documento, tipoDocumento):
+                  especialidadMedico, nombreConsultorio, nombreMedico, diasNoAgendados, horarioDisponible, documento, tipoDocumento):
         super().__init__(nombrePaciente, dia, hora, fechaAgenda, motivoConsulta, 
                   especialidadMedico, nombreConsultorio, nombreMedico, diasNoAgendados, horarioDisponible)
         self.__documento = documento
@@ -59,9 +58,6 @@ class Paciente (Cita):
                 print("NombreConsultorio: ", Paciente.Cit["NombreConsultorio"])
                 print("Dias: ", Paciente.Cit["Dias"])
                 print("Horas: ", Paciente.Cit["Horas"])
-
-    def seleccionarEspecialidad ():
-        pass
 
     def getDatos3 (self):
         return f'{self.__documento},{self.__tipoDocumento}'

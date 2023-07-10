@@ -26,6 +26,6 @@ class Medico (Paciente):
                 print("DiasNoAgendados", Paciente.Cit["DiaNoAgendados"])
             else:
                 print("Cita no encontrada.")
-
+    
     def getDatos2 (self):
-        return f'{self.__disponibilidad},{self.__consultorio}'
+        return self.__disponibilidad, self.__consultorio
