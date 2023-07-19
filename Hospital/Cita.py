@@ -1,5 +1,5 @@
 class Cita ():
-    def __init__(self, disponibilidad,consultorio, nombrePaciente, dia, hora, fechaAgenda, motivoConsulta, 
+    def __init__(self, nombrePaciente, dia, hora, fechaAgenda, motivoConsulta, 
                  especialidadMedico, nombreConsultorio, nombreMedico, 
                  diasNoAgendados, horarioDisponible):
         self.__nombrePaciente = nombrePaciente

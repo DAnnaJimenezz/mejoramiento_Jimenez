@@ -2,9 +2,7 @@ from Paciente import *
 class Medico (Paciente):
     especializaciones = []
     Esp = {}
-    def __init__ (self, documento, tipoDocumento, nombrePaciente, dia, hora, fechaAgenda, motivoConsulta, 
-                 especialidadMedico, nombreConsultorio, nombreMedico, 
-                 diasNoAgendados, horarioDisponible,
+    def __init__ (self, documento, tipoDocumento,
                  disponibilidad, consultorio):
         super().__init__(documento, tipoDocumento)
         self.__disponibilidad = disponibilidad
@@ -17,7 +15,7 @@ class Medico (Paciente):
         for Paciente.Cit in Paciente.citas:
             nombreBusqueda = input('Ingrese el nombre del paciente que tiene la cita: ')
             if Paciente.Cit["NombrePaciente"] == nombreBusqueda:
-                print("Cita encontrada:")
+                print("CITA ENCONTRADA")
                 print("NombrePaciente: ", Paciente.Cit["NombrePaciente"])
                 print("Dias: ", Paciente.Cit["Dias"])
                 print("Horas: ", Paciente.Cit["Horas"])
@@ -25,7 +23,7 @@ class Medico (Paciente):
                 print("Motivo: ", Paciente.Cit["Motivo"])
                 print("DiasNoAgendados", Paciente.Cit["DiaNoAgendados"])
             else:
-                print("Cita no encontrada.")
+                print("CITA NO ENCONTRADA.")
     
     def getDatos2 (self):
         return self.__disponibilidad, self.__consultorio

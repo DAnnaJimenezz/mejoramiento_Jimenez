@@ -41,13 +41,14 @@ class Paciente (Cita):
         "TipoDocumento":tipoDocuemnto
         }
         Paciente.citas.append(Paciente.Cit)
-        print("Cita almacenada correctamente.")
+        print("CITA ALMACENADA CORRECTAMENTE.")
 
     def eliminarCita ():
         for Paciente.Cit in Paciente.citas:
             eliminarCita = input('Ingrese el nombre guardado de la cita para eliminar:')
             if Paciente.Cit["NombrePaciente"] == eliminarCita:
                 Paciente.citas.remove(Paciente.Cit)
+                print ("CITA ELIMINADA CORRECTAMENTE.")
 
     def consultarCita ():
         for Paciente.Cit in Paciente.citas:
@@ -58,6 +59,8 @@ class Paciente (Cita):
                 print("NombreConsultorio: ", Paciente.Cit["NombreConsultorio"])
                 print("Dias: ", Paciente.Cit["Dias"])
                 print("Horas: ", Paciente.Cit["Horas"])
+            else:
+                print ("NO SE ENCUENTRA NINGUNA CITA.")
 
     def getDatos3 (self):
         return f'{self.__documento},{self.__tipoDocumento}'
